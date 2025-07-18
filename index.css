@@ -37,7 +37,15 @@
 .btn-primary{
     margin-bottom: 20px;
 }
+.main{
+    width: 1440px;
+    height: 0 auto;
+}
 /* header styles */
+main{
+    max-width: 1440px;
+    height: 0px auto;
+}
 
 /*navbar related style */
 .navbar{
@@ -58,7 +66,7 @@
     font-weight: 500;
     
 }
-.navbar, bannar{
+.navbar, banner{
     max-width: 1440px;
     margin: 0 auto;
 
@@ -77,11 +85,117 @@
 }
 .banner-image{
     width: 100%;
+    
+}
+/**team images and team title style**/
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,0.50fr);
+    gap: 1rem;
 }
 
+.our-featurses{
+    height: 304px;
+    width: 437px;
+
+    margin-top: 201px;
+    margin-left: 73px;
+    
+}
+.team{
+    justify-content: center;
+}
+/**architec style**/
+.font-size{
+    font-size: 40px;
+}
+.architec{
+    margin-top: 231px;
+    border:2px solid bisque;
+}
+.architec-img{
+    width: 680px;
+    height: 800px;
+}
+.architec-items{
+    border: 1px solid wheat;
+    background-color: rgb(253, 253, 253);
+    padding: 10px;
+    margin: 20px 0px;
+    border-radius: 5px;
+}
+.architec-parent{
+   padding: 0px 30px;
+}
+
+/**container-icon style**/
+.header{
+    margin-left:20px ;
+}
+.container-icon{
+    justify-content:space-between;
+    justify-items: center;
+    margin: 0px 50px;
+}
+.icon{
+    height: 241px;
+    width: 241px;
+    border: 2px solid rgb(255, 221, 0);
+    text-align: center;
+    padding-top:30px;
+    background-color:white;
+    gap: 5px;
+    border-radius: 5px;
+    box-shadow: 5px 6px 25px 5px black;
+
+    
+}
+/** logo style**/
+
+.sponser-title{
+    width: 442px;
+    height: 129px;
+    text-align: center;
+    margin-top: 70px;
+    margin-left: 460px;
+}  
+.sponser-image{
+    justify-content: space-between;
+    
+    
+    margin-left: 200px;
+}
+.apnsr-image{
+    height: 150xp;
+    width: 150px;
+    
+    margin-right:50px ;
+    justify-content: space-between;
+
+}
+.lastpera{
+    height: 70px;
+    width: 1490px;
+    background-color: bisque;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+.last-text{
+    margin-top:20px;
+    justify-items: baseline;
+    justify-content: baseline;
+}
 /*responsive media query*/
 @media screen and (max-width:576px){
-    .navbar, .nav-link{
+    .navbar, .nav-link,.team{
         flex-direction: column;
     }
+    .team-img-container{
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 20px;
+    }
 }
+
+
+
