@@ -127,7 +127,16 @@ main{
 .architec-parent{
    padding: 0px 30px;
 }
-
+.bnt-year{
+    position: relative;
+    bottom: 65px;
+    left: -60px;
+    background-color:rgba(255, 144, 14, 1);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
 /**container-icon style**/
 .header{
     margin-left:20px ;
@@ -173,27 +182,45 @@ main{
     justify-content: space-between;
 
 }
-.lastpera{
-    height: 70px;
+.footer{
+    height: 50px;
     width: 1490px;
-    background-color: bisque;
-    text-align: center;
-    margin-bottom: 10px;
-
+    background-color: antiquewhite;
+    margin-left: 25px;
 }
-.last-text{
-    margin-top:20px;
-    justify-items: baseline;
-    justify-content: baseline;
+.lastpera{
+    text-align: center;
+    justify-content: center;
+    display: flex;
 }
 /*responsive media query*/
 @media screen and (max-width:576px){
-    .navbar, .nav-link,.team{
+     .navbar,
+     .nav-link,
+     .team,
+     .container-icon,
+     .architec{
         flex-direction: column;
+    }
+    .bnt{
+        width: ;
+        height: ;
     }
     .team-img-container{
         grid-template-columns: repeat(1,1fr);
         margin-left: 20px;
+    }
+
+    .architec-parent, .bnt{
+        flex-direction: column;
+    }
+
+    .justify-content{
+        flex-direction: column;
+    }
+
+    .sponser-image{
+        grid-template-columns: repeat(1,1fr);
     }
 }
 
